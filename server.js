@@ -4,7 +4,7 @@ var path = require("path");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = 3010;
+var PORT = 3011;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,6 +24,6 @@ app.get("/survey", function(req, res) {
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function() {
+app.listen( process.env.PORT|| PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
