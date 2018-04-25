@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery.js"></script> -->
+
+
+
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      
     <title>Friend Finder</title>
 </head>
 
@@ -27,18 +34,14 @@
         <form>
 
             <label for="validationServer03">Name (Required)</label>
-            <input type="text" class="form-control is-invalid" id="validationServer01" placeholder="Name" required>
-            <div class="invalid-feedback">
-                Please provide a valid Name.
-            </div>
+            <input type="text" class="form-control is-invalid" id="name">
+      
 
             <!--  -->
 
-            <label for="validationServer03">Link to Photo Image (Required) </label>
-            <input type="text" class="form-control is-invalid" id="validationServer02" placeholder="picture url" required>
-            <div class="invalid-feedback">
-                Please provide a valid url.
-            </div>
+            <label for="validationServer03">Name (Required)</label>
+            <input type="text" class="form-control is-invalid" id="photo">
+         
 
 
         </form>
@@ -47,108 +50,151 @@
         <!--  -->
 
         <label for="validationServer03">question one </label>
-        <select class="form-control  col-md-4 " id="exampleFormControlSelect1">
-                <option selected>Choose...</option>
+        <select class="form-control  col-md-4 " id="question1">
+            <option disabled selected>Choose...</option>
             <option value="1"> 1 (Strongly Disagree)</option>
-            <option value="1"> 2</option>
-            <option value="1"> 3</option>
-            <option value="1"> 4</option>
-            <option value="1"> 5 (Strongly Agree)</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5 (Strongly Agree)</option>
         </select>
 
         <!--  -->
         <!--  -->
 
         <label for="validationServer03">question one </label>
-        <select class="form-control  col-md-4 " id="exampleFormControlSelect1">
-                <option selected>Choose...</option>
+        <select class="form-control  col-md-4 " id="question2">
+            <option disabled selected>Choose...</option>
             <option value="1"> 1 (Strongly Disagree)</option>
-            <option value="1"> 2</option>
-            <option value="1"> 3</option>
-            <option value="1"> 4</option>
-            <option value="1"> 5 (Strongly Agree)</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5 (Strongly Agree)</option>
+        </select>
+
+        <!--  -->
+        <!--  -->
+        
+        <label for="validationServer03">question one </label>
+        <select class="form-control  col-md-4 " id="question3">
+            <option disabled selected>Choose...</option>
+            <option value="1"> 1 (Strongly Disagree)</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5 (Strongly Agree)</option>
         </select>
 
         <!--  -->
         <!--  -->
 
         <label for="validationServer03">question one </label>
-        <select class="form-control  col-md-4 " id="exampleFormControlSelect1">
-                <option selected>Choose...</option>
+        <select class="form-control  col-md-4 " id="question4">
+            <option disabled selected>Choose...</option>
             <option value="1"> 1 (Strongly Disagree)</option>
-            <option value="1"> 2</option>
-            <option value="1"> 3</option>
-            <option value="1"> 4</option>
-            <option value="1"> 5 (Strongly Agree)</option>
-        </select>
-
-        <!--  -->
-        <!--  -->
-
-        <label for="validationServer03">question one </label>
-        <select class="form-control  col-md-4 " id="exampleFormControlSelect1">
-                <option selected>Choose...</option>
-            <option value="1"> 1 (Strongly Disagree)</option>
-            <option value="1"> 2</option>
-            <option value="1"> 3</option>
-            <option value="1"> 4</option>
-            <option value="1"> 5 (Strongly Agree)</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5 (Strongly Agree)</option>
         </select>
         <!--  -->
         <!--  -->
         <label for="validationServer03">question one </label>
-        <select class="form-control  col-md-4 " id="exampleFormControlSelect1">
-                <option selected>Choose...</option>
+        <select class="form-control  col-md-4 " id="question5">
+            <option disabled selected>Choose...</option>
             <option value="1"> 1 (Strongly Disagree)</option>
-            <option value="1"> 2</option>
-            <option value="1"> 3</option>
-            <option value="1"> 4</option>
-            <option value="1"> 5 (Strongly Agree)</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5 (Strongly Agree)</option>
         </select>
         <!--  -->
         <!--  -->
         <label for="validationServer03">question one </label>
-        <select class="form-control  col-md-4 " id="exampleFormControlSelect1">
-                <option selected>Choose...</option>
+        <select class="form-control  col-md-4 " id="question6">
+            <option disabled selected>Choose...</option>
             <option value="1"> 1 (Strongly Disagree)</option>
-            <option value="1"> 2</option>
-            <option value="1"> 3</option>
-            <option value="1"> 4</option>
-            <option value="1"> 5 (Strongly Agree)</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5 (Strongly Agree)</option>
         </select>
         <!--  -->
         <!--  -->
 
         <label for="validationServer03">question one </label>
-        <select class="form-control  col-md-4 " id="exampleFormControlSelect1">
-                <option selected>Choose...</option>
+        <select class="form-control  col-md-4 " id="question7">
+            <option disabled selected>Choose...</option>
             <option value="1"> 1 (Strongly Disagree)</option>
-            <option value="1"> 2</option>
-            <option value="1"> 3</option>
-            <option value="1"> 4</option>
-            <option value="1"> 5 (Strongly Agree)</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5 (Strongly Agree)</option>
         </select>
         <!--  -->
         <!--  -->
 
         <label for="validationServer03">question one </label>
-        <select class="form-control  col-md-4 " id="exampleFormControlSelect1">
-            <option selected>Choose...</option>
+        <select class="form-control  col-md-4 " id="question8">
+            <option disabled selected>Choose...</option>
             <option value="1"> 1 (Strongly Disagree)</option>
-            <option value="1"> 2</option>
-            <option value="1"> 3</option>
-            <option value="1"> 4</option>
-            <option value="1"> 5 (Strongly Agree)</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5 (Strongly Agree)</option>
+        </select>
+        <!--  -->
+        
+        <label for="validationServer03">question one </label>
+        <select class="form-control  col-md-4 " id="question9">
+            <option disabled selected>Choose...</option>
+            <option value="1"> 1 (Strongly Disagree)</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5 (Strongly Agree)</option>
         </select>
         <!--  -->
 
+        <label for="validationServer03">question one </label>
+        <select class="form-control  col-md-4 " id="question10">
+            <option disabled selected>Choose...</option>
+            <option value="1"> 1 (Strongly Disagree)</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5 (Strongly Agree)</option>
+        </select>
+
+        <button id="submit">submit</button>
 
 
 
+        <script type="text/javascript">
 
 
+            $("#submit").on("click", function (event) {
+                event.preventDefault();
 
-    </div>
+                var newCharacter = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val(),
+                    scores: [$("#question1").val()]
+
+                };
+                console.log(newCharacter)
+            
+                // Question: What does this code do??
+                $.post("/api/new", newCharacter, function (data){
+                    console.log("inside of post")
+                    console.log(data)
+                    console.log("adding to....")
+                })
+
+            });
+
+        </script>
+
 </body>
 
 </html>
