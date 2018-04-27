@@ -10,30 +10,35 @@ module.exports = function (app) {
     console.log(characters)
   });
 
-app.post("/api/new", function (req, res) {
+  app.post("/api/new", function (req, res) {
 
-  var newCharacter = req.body;
-  characters.push(newCharacter);
-//looping from list
-  for(var i = 0; i < characters.length; i++){
-    console.log(characters[i].scores)
-var sum = 0;
-//getting sum from the list
-    for ( var j = 0, l = characters[i].scores.length; j < l; j++ ) {
-      sum += characters[i].scores[j];
-  }
-  console.log(sum);
-
-  }
+    var newCharacter = req.body.scores;
+    var scoresArray = [];
+    var friendCount = 0;
+    var bestMatch = 0;
 
 
-  console.log(newCharacter)
-  console.log(characters)
+    //runs through all 
+    for (var i = 0; i < characters.length; i++) {
+      var scoresDiff = 0;
+      //run through scores
+      for (var j = 0; j < newCharacter.length; j++) {
+        scoresDiff += (Math.abs(parseInt(characters[i].scores[j]) - parseInt(newCharacter[j])));
+      }
 
+      scoresArray.push(scoresDiff);
+    }
+    //score array run
+    for (var i = 0; i < scoresArray.length; i++) {
+      if (scoresArray[i] <= scoresArray[bestMatch]) {
+        bestMatch = i;
+      }
+    }
+    var bff = characters[bestMatch];
+    res.json(bff);
 
-  // return the best match friend
-  res.json(characters);
-});
+    characters.push(req.body);
+  });
 
 
 };
