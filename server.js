@@ -5,7 +5,7 @@ var path = require("path");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = 3111;
+var PORT = 3112;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
